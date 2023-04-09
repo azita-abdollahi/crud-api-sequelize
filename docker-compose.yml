@@ -23,7 +23,17 @@ services:
     volumes:
       - "./pgadmin-data:/var/lib/pgadmin"
 
-  
+  backend:
+    image: backend
+    container_name: backend-container
+    build: 
+      context: .
+    restart: unless-stopped
+    depends_on:
+      - postgres
+    networks: 
+      connet:
+        ipv4_address: 192.168.22.16
 
 networks:
   connet:
