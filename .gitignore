@@ -1,5 +1,7 @@
 node_modules
 *.env
+pgadmin-data/
+postgres-data/
 .vscode
 .vs
 .DS_Store
