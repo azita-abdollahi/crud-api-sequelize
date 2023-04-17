@@ -103,4 +103,4 @@ docker compose down
 docker compose logs -f
 ```
 
-**Note:** By default backend service listens on `TCP/3000` port and pg-admin is available on `TCP/8080.
+**Note:** By default backend service listens on `TCP/3000` port and pg-admin is available on `TCP/8080`.
